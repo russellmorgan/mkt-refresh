@@ -1,4 +1,82 @@
+//IE11 specific styles
+@mixin target-metro {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'karlaregular';
   font-size:16px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'ms_gloriola_ii_std_semibold';
+  line-height: 1.1;
+}
+
+// Specific font classes
+.g-semi-bold {
+  font-family: 'ms_gloriola_ii_std_semibold';
+  font-weight:400;
+}
+
+
+// Top nav
+.nav {
+  position: relative;
+  li {
+    cursor: pointer;
+    border-bottom:7px solid #fff;
+    padding:0 1rem 1rem 1rem;
+    position: relative;
+    &:hover {
+      border-bottom:7px solid #007BC8
+    }
+  }
+}
+
+.subnav {
+  position: relative;
+  width: 100%;
+  nav {
+    height:4rem;
+    background:#999;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    ul {
+      height:100%;
+      align-items: stretch;
+    }
+    li {
+      cursor:pointer;
+      position: relative;
+      padding: 0 1rem;
+      line-height: 4rem;
+      aside {
+        position: absolute;
+        margin-left:-1rem;
+        min-width: 300px;
+        background: #fff;
+        color: #000;
+        display: none;
+        padding: 1rem;
+        line-height: 1.2;
+        box-shadow: 4px 4px 4px #eee;
+      }
+      &:hover {
+        background: #424141;
+        aside {
+          display: block;
+        }
+      }
+    }
+  }
 }

@@ -1,5 +1,84 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'karlaregular';
   font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'ms_gloriola_ii_std_semibold';
+  line-height: 1.1;
+}
+
+.g-semi-bold {
+  font-family: 'ms_gloriola_ii_std_semibold';
+  font-weight: 400;
+}
+
+.nav {
+  position: relative;
+}
+
+.nav li {
+  cursor: pointer;
+  border-bottom: 7px solid #fff;
+  padding: 0 1rem 1rem 1rem;
+  position: relative;
+}
+
+.nav li:hover {
+  border-bottom: 7px solid #007BC8;
+}
+
+.subnav {
+  position: relative;
+  width: 100%;
+}
+
+.subnav nav {
+  height: 4rem;
+  background: #999;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.subnav nav ul {
+  height: 100%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.subnav nav li {
+  cursor: pointer;
+  position: relative;
+  padding: 0 1rem;
+  line-height: 4rem;
+}
+
+.subnav nav li aside {
+  position: absolute;
+  margin-left: -1rem;
+  min-width: 300px;
+  background: #fff;
+  color: #000;
+  display: none;
+  padding: 1rem;
+  line-height: 1.2;
+  -webkit-box-shadow: 4px 4px 4px #eee;
+          box-shadow: 4px 4px 4px #eee;
+}
+
+.subnav nav li:hover {
+  background: #424141;
+}
+
+.subnav nav li:hover aside {
+  display: block;
 }
 /*# sourceMappingURL=index.css.map */

@@ -13,6 +13,47 @@
   <title>Morgan Stanley | HR Toolkit</title>
 </head>
 <body>
-  hello world
+  <header x-data="{show:0}" x-on:mouseover.away="show=0">
+    <nav class="flex justify-between w-full pt-8 px-10">
+      <a href="index.html"><img src="img/logo-black.png" alt="Morgan Stanley" width="170"></a>
+      <ul class="flex space-x-4 g-semi-bold nav">
+        <li x-on:mouseover="show=1">Templates</li>
+        <li x-on:mouseover="show=2">Assets</li>
+        <li>Recruitment Resources</li>
+        <li>Videos</li>
+      </ul>
+    </nav>
+    <div class="subnav">
+      <nav class="flex justify-between items-center px-10" x-show="show===1">
+        <div>Templates ></div>
+        <ul class="flex space-x-4">
+          <li>
+            Agenda
+            <aside>
+              <h4 class="pb-4">Agenda</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc fringilla, tristique velit id, consequat nulla.</p>
+            </aside>
+          </li>
+          <li>Email</li>
+          <li>Presentation</li>
+        </ul>
+      </nav>
+      <nav class="flex justify-between items-center px-10" x-show="show===2">
+        <div>Assets ></div>
+        <ul class="flex space-x-4">
+          <li>
+            Email Headers
+            <aside>
+              <h4 class="pb-4">Email Headers</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc fringilla, tristique velit id, consequat nulla.</p>
+            </aside>
+          </li>
+          <li>Social Covers</li>
+          <li>Static Banners</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="h-56" style="background:#eee"></div>
 </body>
 </html>
