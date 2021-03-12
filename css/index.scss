@@ -63,13 +63,17 @@ h1, h2, h3, h4 {
       aside {
         position: absolute;
         margin-left:-1rem;
-        min-width: 300px;
+        width: 27rem;
         background: #fff;
         color: #000;
         display: none;
-        padding: 1rem;
+        padding: 2rem;
         line-height: 1.2;
         box-shadow: 4px 4px 4px #eee;
+        &.right {
+          transform:translate(-85%,0);
+          margin-left: 0;
+        }
       }
       &:hover {
         background: #424141;
