@@ -19,6 +19,20 @@ h1, h2, h3, h4 {
   line-height: 1.1;
 }
 
+h1 {
+  font-size: 3.375rem;
+  text-align:center;
+}
+
+h2 {
+  font-size: 1.875rem;
+  text-align: center;
+}
+
+p {
+  padding: 1.25rem 0px;
+}
+
 // Specific font classes
 .g-semi-bold {
   font-family: 'ms_gloriola_ii_std_semibold';
@@ -45,7 +59,7 @@ h1, h2, h3, h4 {
   width: 100%;
   nav {
     height:4rem;
-    background:#999;
+    background:#616161;
     color: #fff;
     position: absolute;
     top: 0;
@@ -69,7 +83,7 @@ h1, h2, h3, h4 {
         display: none;
         padding: 2rem;
         line-height: 1.2;
-        box-shadow: 4px 4px 4px #eee;
+        box-shadow: 2px 2px 2px #000;
         &.right {
           transform:translate(-85%,0);
           margin-left: 0;
@@ -83,4 +97,16 @@ h1, h2, h3, h4 {
       }
     }
   }
+}
+
+.home-banner {
+  height:400px;
+  background: #9B9B9B;
+  width:100%;
+}
+
+.home-steps {
+  font-size: 6.25rem;
+  font-family: 'ms_gloriola_ii_displaythin';
+  margin-bottom: 1.25rem;
 }
