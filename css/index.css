@@ -26,6 +26,34 @@ p {
   padding: 1.25rem 0px;
 }
 
+footer {
+  border-top: 2px solid #D0D0D0;
+  border-bottom: 2px solid #D0D0D0;
+  padding: 2.8125rem 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #333;
+  margin: 0 auto 4rem auto;
+  max-width: 58rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer a {
+  color: #333;
+  margin: auto 1.25rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 .g-semi-bold {
   font-family: 'ms_gloriola_ii_std_semibold';
   font-weight: 400;

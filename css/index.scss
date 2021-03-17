@@ -33,6 +33,26 @@ p {
   padding: 1.25rem 0px;
 }
 
+footer {
+  border-top:2px solid #D0D0D0;
+  border-bottom:2px solid #D0D0D0;
+  padding: 2.8125rem 0;
+  text-align: center;
+  display: flex;
+  color:#333;
+  margin:0 auto 4rem auto;
+  max-width:58rem;
+  align-items: center;
+  justify-content: center;
+  a {
+    color: #333;
+    margin: auto 1.25rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 // Specific font classes
 .g-semi-bold {
   font-family: 'ms_gloriola_ii_std_semibold';
