@@ -141,4 +141,25 @@ footer a:hover {
   font-family: 'ms_gloriola_ii_displaythin';
   margin-bottom: 1.25rem;
 }
+
+.btt {
+  display: block;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  font-size: 0.75rem;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.list > *:first-of-type {
+  border-top: 0;
+}
+
+.list > * {
+  border-top: 1px solid #9B9B9B;
+  font-family: 'karlabold';
+  font-weight: 400;
+}
 /*# sourceMappingURL=index.css.map */
