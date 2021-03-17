@@ -152,7 +152,7 @@
   <div class="container mx-auto py-24">
     <h1>Templates</h1>
     <h2 class="pb-12">Recruiting Marketing Toolkit</h2>
-    <div x-data="templates()">
+    <section x-data="templates()">
       <h2 class="pt-12">Agenda</h2>
       <a name="agenda"></a>
       <p class="text-center w-9/12 mx-auto" x-text="agendaIntro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id magna vehicula, dictum elit pulvinar, convallis ipsum. Phasellus ut convallis tortor, elementum blandit lorem. Donec vel lectus elementum, luctus dui sed, volutpat augue. Phasellus eget turpis nec purus egestas maximus.</p>
@@ -161,13 +161,15 @@
           <a x-text="agenda.title" x-bind:href="agenda.link" target="_blank" class="block py-6"></a>
         </template>
       </div>
-      <h2 class="pt-12">Emails</h2>
-      <a name="emails"></a>
-      <p class="text-center w-7/12 mx-auto" x-text="emailIntro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id magna vehicula, dictum elit pulvinar, convallis ipsum. Phasellus ut convallis tortor, elementum blandit lorem. Donec vel lectus elementum, luctus dui sed, volutpat augue. Phasellus eget turpis nec purus egestas maximus.</p>
-      <div class="list mx-auto w-9/12">
-        <template x-for="email in emails">
-          <a x-text="email.title" x-bind:href="email.link" target="_blank" class="block py-6"></a>
-        </template>
+      <div class="inverse">
+        <h2 class="pt-12">Emails</h2>
+        <a name="emails"></a>
+        <p class="text-center w-7/12 mx-auto" x-text="emailIntro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id magna vehicula, dictum elit pulvinar, convallis ipsum. Phasellus ut convallis tortor, elementum blandit lorem. Donec vel lectus elementum, luctus dui sed, volutpat augue. Phasellus eget turpis nec purus egestas maximus.</p>
+        <div class="list mx-auto w-9/12">
+          <template x-for="email in emails">
+            <a x-text="email.title" x-bind:href="email.link" target="_blank" class="block py-6"></a>
+          </template>
+        </div>
       </div>
       <h2 class="pt-12">Presentations</h2>
       <a name="presentations"></a>
@@ -177,13 +179,15 @@
         <a href="#"><img src="https://via.placeholder.com/200" alt="" class="mx-auto pb-5"></a>
         <a href="#"><img src="https://via.placeholder.com/200" alt="" class="mx-auto pb-5"></a>
       </div>
-    </div>
+    </section>
   </div>
   <footer>
-    <a href="#">Lorem Ipsum</a>
-    <a href="#">Lorem Ipsum</a>
+    <section>
+      <a href="#">Lorem Ipsum</a>
+      <a href="#">Lorem Ipsum</a>
+    </section>
   </footer>
-  <a href="#top" class="btt animate-bounce">
+  <a href="#top" class="btt">
     <img src="img/back-to-top.png" alt="back to top">
     back to top
   </a>
