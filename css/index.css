@@ -91,7 +91,7 @@ footer a:hover {
 }
 
 .subnav nav {
-  height: 4rem;
+  height: 5.25rem;
   background: #005AA4;
   color: #fff;
   position: absolute;
@@ -100,8 +100,31 @@ footer a:hover {
   width: 100%;
 }
 
+.subnav nav > div {
+  height: 4rem;
+  border-bottom: 1px solid #fff;
+  width: 275px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2.5rem;
+}
+
+.subnav nav > div span:after {
+  content: '';
+  background-image: url(../img/nav-arrow.png);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 9px;
+  display: inline-block;
+  margin-left: 1.25rem;
+}
+
 .subnav nav ul {
-  height: 100%;
+  height: 4rem;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
