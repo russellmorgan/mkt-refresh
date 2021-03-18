@@ -17,15 +17,15 @@
     <nav class="flex justify-between w-full pt-8 px-10">
       <a href="index.html"><img src="img/logo-black.png" alt="Morgan Stanley" width="170"></a>
       <ul class="flex space-x-4 g-semi-bold nav">
-        <li x-on:mouseover="show=1">Templates</li>
-        <li x-on:mouseover="show=2">Assets</li>
-        <li x-on:mouseover="show=3">Recruitment Resources</li>
-        <li x-on:mouseover="show=4">Videos</li>
+        <li x-on:mouseover="show=1"><a href="templates.html">Templates</a></li>
+        <li x-on:mouseover="show=2"><a href="assets.html">Assets</a></li>
+        <li x-on:mouseover="show=3"><a href="resources.html">Recruitment Resources</a></li>
+        <li x-on:mouseover="show=4"><a href="videos.html">Videos</a></li>
       </ul>
     </nav>
     <div class="subnav">
       <nav class="flex justify-between pr-10" x-show="show===1">
-        <div>Templates ></div>
+        <div><span>Templates</span></div>
         <ul class="flex space-x-4">
           <li>
             <a href="templates.html#agenda">Agenda</a>
@@ -51,40 +51,40 @@
         </ul>
       </nav>
       <nav class="flex justify-between pr-10" x-show="show===2">
-        <div>Assets ></div>
+        <div><span>Assets</span></div>
         <ul class="flex space-x-4">
           <li>
-            Email Headers
+            <a href="assets.html#email">Email Headers</a>
             <aside>
               <h4 class="pb-4">Email Headers</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc fringilla, tristique velit id, consequat nulla.</p>
             </aside>
           </li>
-          <li>Social Covers
+          <li><a href="assets.html#social">Social Covers</a>
             <aside>
               <h4>Title</h4>
               <p>Lorem ipsum</p>
             </aside>
           </li>
-          <li>Static Banners
+          <li><a href="assets.html#static">Static Banners</a>
             <aside>
               <h4>Title</h4>
               <p>Lorem ipsum</p>
             </aside>
           </li>
-          <li>Animated Banners
+          <li><a href="assets.html#animated">Animated Banners</a>
             <aside>
               <h4>Title</h4>
               <p>Lorem ipsum</p>
             </aside>
           </li>
-          <li>One Sheets
+          <li><a href="assets.html#onesheet">One Sheets</a>
             <aside class="right">
               <h4>Title</h4>
               <p>Lorem ipsum</p>
             </aside>
           </li>
-          <li>Image Options
+          <li><a href="assets.html#image">Image Options</a>
             <aside class="right">
               <h4>Title</h4>
               <p>Lorem ipsum</p>
@@ -93,7 +93,7 @@
         </ul>
       </nav>
       <nav class="flex justify-between pr-10" x-show="show===3">
-        <div>Recruitment Resources ></div>
+        <div><span>Recruitment Resources</span></div>
         <ul class="flex space-x-4">
           <li>
             <a href="resources.html#resources">Recruiting Resources</a>
@@ -102,13 +102,13 @@
             </aside>
           </li>
           <li>
-            Content Tracker
+            <a href="resources.html#tracker">Content Tracker</a>
             <aside class="right">
               <h4 class="pb-4">Agenda</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc fringilla, tristique velit id, consequat nulla.</p>
             </aside>
           </li>
-          <li>Landing Page
+          <li><a href="resources.html#landing">Landing Page</a>
             <aside class="right">
               <h4>Title</h4>
               <p>Lorem ipsum</p>
@@ -117,34 +117,34 @@
         </ul>
       </nav>
       <nav class="flex justify-between pr-10" x-show="show===4">
-        <div>Videos ></div>
+        <div><span>Videos</span></div>
         <ul class="flex space-x-4">
-          <li>Campus Recruitment
+          <li><a href="videos.html#campus">Campus Recruitment</a>
             <aside>
               <h4>Title</h4>
               <p>Lorem ipsum</p>
             </aside>
           </li>
-          <li>We are MS Campaign
+          <li><a href="videos.html#campaign">We are MS Campaign</a>
             <aside class="right">
               <h4>Title</h4>
               <p>Lorem ipsum</p>
             </aside>
           </li>
-          <li>We are MS Career Journey
+          <li><a href="videos.html#career">We are MS Career Journey</a>
             <aside class="right">
               <h4>Title</h4>
               <p>Lorem ipsum</p>
             </aside>
           </li>
           <li>
-            Global In-House Center
+            <a href="videos.html#global">Global In-House Center</a>
             <aside>
               <h4 class="pb-4">Global In-House Center</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc fringilla, tristique velit id, consequat nulla.</p>
             </aside>
           </li>
-          <li>Technology Analyst Program
+          <li><a href="videos.html#technology">Technology Analyst Program</a>
             <aside>
               <h4>Title</h4>
               <p>Lorem ipsum</p>
@@ -204,8 +204,10 @@
     </div>
   </div>
   <footer>
-    <a href="#">Lorem Ipsum</a>
-    <a href="#">Lorem Ipsum</a>
+    <section>
+      <a href="#">Lorem Ipsum</a>
+      <a href="#">Lorem Ipsum</a>
+    </section>
   </footer>
 </body>
 </html>
