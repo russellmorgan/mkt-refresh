@@ -31,11 +31,11 @@
         <div>Templates ></div>
         <ul class="flex space-x-4">
           <li>
-            Agenda
+            <a href="templates.html#agenda">Agenda</a>
           </li>
-          <li>Email
+          <li><a href="templates.html#emails">Email</a>
           </li>
-          <li>Presentation
+          <li><a href="templates.html#presentations">Presentation</a>
           </li>
         </ul>
       </nav>
@@ -153,9 +153,14 @@
           elit. Nulla id magna vehicula, dictum elit pulvinar, convallis ipsum. Phasellus ut convallis tortor, elementum
           blandit lorem. Donec vel lectus elementum, luctus dui sed, volutpat augue. Phasellus eget turpis nec purus
           egestas maximus.</p>
-        <div class="list mx-auto">
+        <div class="flex mx-auto space-x-8 py-12">
           <template x-for="agenda in agendas">
-            <a x-text="agenda.title" x-bind:href="agenda.link" target="_blank" class="block py-6"></a>
+            <div>
+              <a x-bind:href="agenda.link" target="_blank" class="py-6">
+                <img src="img/tmp.png" alt="">
+                <span x-text="agenda.title"></span>
+              </a>
+            </div>
           </template>
         </div>
       </div>
@@ -168,11 +173,16 @@
             elit. Nulla id magna vehicula, dictum elit pulvinar, convallis ipsum. Phasellus ut convallis tortor,
             elementum blandit lorem. Donec vel lectus elementum, luctus dui sed, volutpat augue. Phasellus eget turpis
             nec purus egestas maximus.</p>
-          <div class="list mx-auto">
-            <template x-for="email in emails">
-              <a x-text="email.title" x-bind:href="email.link" target="_blank" class="block py-6"></a>
-            </template>
-          </div>
+            <div class="flex mx-auto space-x-8 py-12">
+              <template x-for="email in emails">
+                <div>
+                  <a x-bind:href="email.link" target="_blank" class="py-6">
+                    <img src="img/tmp.png" alt="">
+                    <span x-text="email.title"></span>
+                  </a>
+                </div>
+              </template>
+            </div>
         </div>
       </div>
       <!-- presentations -->
