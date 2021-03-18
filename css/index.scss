@@ -67,13 +67,14 @@ footer {
 // Top nav
 .nav {
   position: relative;
+  margin-bottom:3px;
   li {
     cursor: pointer;
     border-bottom:7px solid #fff;
     padding:0 1rem 1rem 1rem;
     position: relative;
     &:hover {
-      border-bottom:7px solid #007BC8
+      border-bottom:7px solid #005AA4;
     }
   }
 }
