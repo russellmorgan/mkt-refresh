@@ -81,6 +81,10 @@ footer {
 .subnav {
   position: relative;
   width: 100%;
+  &.fixed {
+    position: fixed;
+    top: 0;
+  }
   nav {
     height:4rem;
     background:#005AA4;

@@ -16,7 +16,7 @@
 
 <body>
   <a name="top"></a>
-  <header x-data="{show:0}" x-on:mouseover.away="show=0">
+  <header x-data="{show:1,stickyNav:false}" x-on:mouseover.away="show=1">
     <nav class="flex justify-between w-full pt-8 px-10">
       <a href="index.html"><img src="img/logo-black.png" alt="Morgan Stanley" width="170"></a>
       <ul class="flex space-x-4 g-semi-bold nav">
@@ -26,29 +26,16 @@
         <li x-on:mouseover="show=4">Videos</li>
       </ul>
     </nav>
-    <div class="subnav">
+    <div class="subnav" :class="{'fixed':stickyNav}" @scroll.window="stickyNav = (window.pageYOffset < 79) ? false:true">
       <nav class="flex justify-between items-center px-10" x-show="show===1">
         <div>Templates ></div>
         <ul class="flex space-x-4">
           <li>
             Agenda
-            <aside class="right">
-              <h4 class="pb-4">Agenda</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc fringilla, tristique velit
-                id, consequat nulla.</p>
-            </aside>
           </li>
           <li>Email
-            <aside class="right">
-              <h4>Email</h4>
-              <p>Lorem ipsum</p>
-            </aside>
           </li>
           <li>Presentation
-            <aside class="right">
-              <h4>Presentation</h4>
-              <p>Lorem ipsum</p>
-            </aside>
           </li>
         </ul>
       </nav>

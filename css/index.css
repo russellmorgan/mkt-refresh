@@ -84,6 +84,11 @@ footer a:hover {
   width: 100%;
 }
 
+.subnav.fixed {
+  position: fixed;
+  top: 0;
+}
+
 .subnav nav {
   height: 4rem;
   background: #005AA4;
