@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 function templates() {
   return {
-    agendaIntro: "Agenda title text here",
+    agendaIntro: "Agenda title text here. consectetur adipiscing elit. Nulla id magna vehicula, dictum elit pulvinar, convallis ipsum. Phasellus ut convallis tortor, elementum blandit lorem. Donec vel lectus elementum, luctus dui sed, volutpat augue. Phasellus eget turpis nec purus egestas maximus.",
     agendas: [
       {"title":"agenda 1","link":"https://www.google.com"},
       {"title":"agenda 2","link":"email url"},
