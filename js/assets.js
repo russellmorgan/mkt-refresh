@@ -1,4 +1,4 @@
-function templates() {
+function data() {
   return {
     emailIntro: "Email header text here. consectetur adipiscing elit. Nulla id magna vehicula, dictum elit pulvinar, convallis ipsum. Phasellus ut convallis tortor, elementum blandit lorem. Donec vel lectus elementum, luctus dui sed, volutpat augue. Phasellus eget turpis nec purus egestas maximus.",
     groups: [
