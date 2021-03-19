@@ -25,7 +25,8 @@
         <li x-on:mouseover="show=4"><a href="videos.html">Videos</a></li>
       </ul>
     </nav>
-    <div class="subnav" :class="{'fixed':stickyNav}" @scroll.window="stickyNav = (window.pageYOffset < 79) ? false:true">
+    <div class="subnav" :class="{'fixed':stickyNav}"
+      @scroll.window="stickyNav = (window.pageYOffset < 79) ? false:true">
       <nav class="flex justify-between pr-10" x-show="show===1">
         <div><span>Templates</span></div>
         <ul class="flex space-x-4">
@@ -72,7 +73,7 @@
       </nav>
       <nav class="flex justify-between pr-10" x-show="show===4">
         <div><span>Videos</span></div>
-        <ul class="flex space-x-4">
+        <ul class="flex">
           <li><a href="videos.html#campus">Campus Recruitment</a>
           </li>
           <li><a href="videos.html#campaign">We are MS Campaign</a>
@@ -92,49 +93,64 @@
   <div class="py-32">
     <h1>Recruitment Resources</h1>
     <h2 class="pb-12">Recruiting Marketing Toolkit</h2>
+    <a name="resources"></a>
     <section>
       <!-- resources -->
       <div class="mx-auto w-9/12 py-12">
         <h2>Recruitment Resources</h2>
         <a name="agenda"></a>
-        <p class="text-center w-9/12 mx-auto" x-text="agendaIntro">Lorem ipsum dolor sit amet, consectetur adipiscing
+        <p class="text-center w-9/12 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing
           elit. Nulla id magna vehicula, dictum elit pulvinar, convallis ipsum. Phasellus ut convallis tortor, elementum
           blandit lorem. Donec vel lectus elementum, luctus dui sed, volutpat augue. Phasellus eget turpis nec purus
           egestas maximus.</p>
         <div class="flex mx-auto space-x-8 py-12">
-          <template x-for="agenda in agendas">
-            <div>
-              <a x-bind:href="agenda.link" target="_blank" class="py-6">
-                <img src="img/tmp.png" alt="">
-                <span x-text="agenda.title"></span>
-              </a>
-            </div>
-          </template>
+          <div>
+            <a href="agenda.link" target="_blank" class="py-6">
+              <img src="img/tmp.png" alt="">
+              <span>Agenda Title</span>
+            </a>
+          </div>
+          <div>
+            <a href="agenda.link" target="_blank" class="py-6">
+              <img src="img/tmp.png" alt="">
+              <span>Agenda Title</span>
+            </a>
+          </div>
+          <div>
+            <a href="agenda.link" target="_blank" class="py-6">
+              <img src="img/tmp.png" alt="">
+              <span>Agenda Title</span>
+            </a>
+          </div>
         </div>
       </div>
       <!-- tracker-->
+      <a name="tracker"></a>
       <div class="inverse">
         <div class="mx-auto w-9/12 py-12">
           <h2>MS Content Tracker</h2>
           <a name="emails"></a>
-          <p class="text-center w-9/12 mx-auto" x-text="emailIntro">Lorem ipsum dolor sit amet, consectetur adipiscing
+          <p class="text-center w-9/12 mx-auto pb-12">Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Nulla id magna vehicula, dictum elit pulvinar, convallis ipsum. Phasellus ut convallis tortor,
             elementum blandit lorem. Donec vel lectus elementum, luctus dui sed, volutpat augue. Phasellus eget turpis
             nec purus egestas maximus.</p>
-            <a href="" class="w-1/3 text-center block mx-auto p-6">Click to Download Excel File</a>
+          <a href="excel.xls" class="excel w-1/3 text-center block mx-auto p-6 rounded-full">Click to Download Excel
+            File</a>
         </div>
       </div>
       <!-- landing -->
+      <a name="landing"></a>
       <div class="mx-auto w-9/12 py-12">
         <h2>Landing Page</h2>
         <a name="presentations"></a>
-        <p class="text-center w-9/12 mx-auto" x-text="presentationsIntro">Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Nulla id magna vehicula, dictum elit pulvinar, convallis ipsum. Phasellus ut convallis tortor,
+        <p class="text-center w-9/12 mx-auto">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Nulla id magna vehicula, dictum elit pulvinar, convallis ipsum. Phasellus ut convallis
+          tortor,
           elementum blandit lorem. Donec vel lectus elementum, luctus dui sed, volutpat augue. Phasellus eget turpis nec
           purus egestas maximus.</p>
         <div class="pt-12 mx-auto">
           <a href="#"><img src="https://via.placeholder.com/520x320?text=Placeholder" alt="" class="mx-auto pb-5"></a>
-        </div>   
+        </div>
       </div>
     </section>
   </div>

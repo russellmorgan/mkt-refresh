@@ -151,8 +151,10 @@ footer {
 }
 
 .home-banner {
-  height:400px;
-  background: #9B9B9B;
+  height:25rem;
+  background-image:url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width:100%;
 }
 
@@ -160,6 +162,14 @@ footer {
   font-size: 6.25rem;
   font-family: 'ms_gloriola_ii_displaythin';
   margin-bottom: 1.25rem;
+  color: #187ABA
+}
+
+.excel {
+  background: #D8D8D8;
+  &:hover {
+    background:#ccc;
+  }
 }
 
 // Back to top
