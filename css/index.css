@@ -201,6 +201,13 @@ footer a:hover {
   text-align: center;
   cursor: pointer;
   z-index: 1;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.btt:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .list > *:first-of-type {

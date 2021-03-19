@@ -182,6 +182,10 @@ footer {
   text-align: center;
   cursor:pointer;
   z-index:1;
+  transition: all 0.2s linear;
+  &:hover {
+    transform:scale(1.05);
+  }
 }
 
 .list {
