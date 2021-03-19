@@ -1,8 +1,3 @@
-window.addEventListener('DOMContentLoaded', function() {
-  //var navElements = document.querySelectorAll("nav li > aside");
-  
-});
-
 function templates() {
   return {
     agendaIntro: "Agenda title text here. consectetur adipiscing elit. Nulla id magna vehicula, dictum elit pulvinar, convallis ipsum. Phasellus ut convallis tortor, elementum blandit lorem. Donec vel lectus elementum, luctus dui sed, volutpat augue. Phasellus eget turpis nec purus egestas maximus.",
